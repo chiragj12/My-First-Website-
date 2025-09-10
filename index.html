@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Floating Colors Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Canvas for floating colors -->
+  <canvas id="bg-canvas"></canvas>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">MyPortfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="toggle-theme" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h2>Welcome to My World</h2>
+      <p>I craft elegant, dynamic web experiences.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Front-end engineer, UX advocate, and relentless tinkerer.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <!-- repeat .project-card as needed -->
+        <div class="project-card" data-project="1">
+          <h3>Project One</h3>
+          <p>Click for details</p>
+        </div>
+        <div class="project-card" data-project="2">
+          <h3>Project Two</h3>
+          <p>Click for details</p>
+        </div>
+        <div class="project-card" data-project="3">
+          <h3>Project Three</h3>
+          <p>Click for details</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Project Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
